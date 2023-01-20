@@ -1,0 +1,175 @@
+
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
+
+body {
+  box-sizing: border-box;
+  font-family: 'ABeeZee', sans-serif;
+  font-weight: 400;
+  background-color: black;
+}
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.sec-position {
+  margin: 0 auto 0 auto;
+  max-width: 1500px;
+  background-color: gray;
+
+}
+
+.wrapper-main {
+  display: flex;
+  gap: 30px;
+  padding-top: 100px;
+  justify-content: center;
+}
+
+.row__display {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  justify-content: left;
+}
+
+.card {
+  display: flex;
+  gap: 30px;
+  background-color: #2f4f4f;
+  border-radius: 8px;
+  max-height: 300px;
+  width: 700px;
+}
+
+
+.main-title {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+
+.status {
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding-bottom: 50px;
+}
+
+
+.span-text {
+  color: grey;
+  font-size: 14px;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+
+.sub-title {
+  color: white;
+  font-size: 20px;
+  padding-bottom: 50px;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.js-load-btn {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: #2f4f4f;
+  border-radius: 8px;
+  &:hover {
+    opacity: 0.5;
+    cursor: pointer;
+  }
+}
+
+.statusBox {
+  display: flex;
+  gap: 10px;
+}
+
+.status__alive {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.status__dead {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color:red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.status__unknown {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color:yellow;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
